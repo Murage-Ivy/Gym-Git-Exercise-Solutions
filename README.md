@@ -99,6 +99,47 @@ Changes not staged for commit:
 
 Dropped stash@{1} (7da920374bb642cdd4f35de4f18b3392204003fc)
 
+<!-- List the remaining stashes -->
 ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git stash list
 stash@{0}: On dev: temporily save changes in team page file
 stash@{1}: On dev: temporily save changes in home page file
+
+<!-- S -->
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git stash apply stash@{1}
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git status
+On branch dev
+Your branch is ahead of 'origin/dev' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md
+
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git add .
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git commit -m "make changes to readme file"
+[dev 3c36d78] make changes to readme file
+ 2 files changed, 13 insertions(+), 1 deletion(-)
+ create mode 100644 home.html
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git status
+On branch dev
+Your branch is ahead of 'origin/dev' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.34 KiB | 457.00 KiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
+   c49ac11..3c36d78  dev -> dev
