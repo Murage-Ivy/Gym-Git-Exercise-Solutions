@@ -234,3 +234,187 @@ Fast-forward
  create mode 100644 home.html
  create mode 100644 services.html
  create mode 100644 team.html
+
+
+ ### Question 2 exercise 2
+ ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ touch services.html
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git status
+On branch ft/service-redesign
+nothing to commit, working tree clean
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git add .
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git commit -m "Create service page"
+[ft/service-redesign c95d71c] Create service page
+ 1 file changed, 14 insertions(+)
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git push u origin ft/service-redesign
+error: src refspec origin does not match any
+error: failed to push some refs to 'u'
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git push -u origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 484 bytes | 484.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Murage-Ivy/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+remote: 
+To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+Branch 'ft/service-redesign' set up to track remote branch 'ft/service-redesign' from 'origin'.
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git add .
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git commit -m "Add text to service page in main branch"
+[main 7b4b436] Add text to service page in main branch
+ 1 file changed, 13 insertions(+)
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 508 bytes | 508.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
+   711334c..7b4b436  main -> main
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ ls
+about.html  home.html  README.md  services.html  team.html
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff --cached
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff --cached
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff 
+diff --git a/services.html b/services.html
+index 752dfbf..e388681 100644
+--- a/services.html
++++ b/services.html
+@@ -8,7 +8,8 @@
+ </head>
+ <body>
+     <h2>Welcome everybody</h2>
+-    <p>This is the service page</p>
++    <p>This is the service pages</p>
++
+ 
+ </body>
+ </html>
+\ No newline at end of file
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff 
+diff --git a/services.html b/services.html
+index 752dfbf..96a317c 100644
+--- a/services.html
++++ b/services.html
+@@ -9,6 +9,5 @@
+ <body>
+     <h2>Welcome everybody</h2>
+     <p>This is the service page</p>
+-
+ </body>
+ </html>
+\ No newline at end of file
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff 
+diff --git a/services.html b/services.html
+index 752dfbf..8fab5d2 100644
+--- a/services.html
++++ b/services.html
+@@ -9,6 +9,6 @@
+ <body>
+     <h2>Welcome everybody</h2>
+     <p>This is the service page</p>
+-
++    
+ </body>
+ </html>
+\ No newline at end of file
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff 
+diff --git a/services.html b/services.html
+index 752dfbf..96a317c 100644
+--- a/services.html
++++ b/services.html
+@@ -9,6 +9,5 @@
+ <body>
+     <h2>Welcome everybody</h2>
+     <p>This is the service page</p>
+-
+ </body>
+ </html>
+\ No newline at end of file
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git status
+On branch ft/service-redesign
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git merge
+Already up to date.
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git status
+On branch ft/service-redesign
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git add .
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git commit -m "Mkae changes"
+[ft/service-redesign d48ff7e] Mkae changes
+ 1 file changed, 1 deletion(-)
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
+   c95d71c..d48ff7e  ft/service-redesign -> ft/service-redesign
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff
+diff --git a/services.html b/services.html
+index 96a317c..ffd795c 100644
+--- a/services.html
++++ b/services.html
+@@ -8,6 +8,6 @@
+ </head>
+ <body>
+     <h2>Welcome everybody</h2>
+-    <p>This is the service page</p>
++    <p>This is the service page and hapyy you are here</p>
+ </body>
+ </html>
+\ No newline at end of file
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git add .
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git commit -m "Redesign service page"
+[ft/service-redesign f39ce8c] Redesign service page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 325 bytes | 325.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
+   d48ff7e..f39ce8c  ft/service-redesign -> ft/service-redesign
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git diff
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git merge ft/service-redesign
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git
