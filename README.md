@@ -179,4 +179,6 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
    1560aa2..1958d9f  dev -> dev
 
-   
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ touch services.html
