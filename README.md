@@ -208,3 +208,29 @@ remote:
 To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
+
+```
+## Checkout your main branch and pull the latest changes
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 628 bytes | 628.00 KiB/s, done.
+From github.com:Murage-Ivy/Gym-Git-Exercise-Solutions
+   64c6f41..cd99c3d  main       -> origin/main
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git pull 
+Updating 64c6f41..cd99c3d
+Fast-forward
+ README.md     | 207 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ about.html    |  12 ++++++++
+ home.html     |  12 ++++++++
+ services.html |   0
+ team.html     |  12 ++++++++
+ 5 files changed, 241 insertions(+), 2 deletions(-)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+ create mode 100644 team.html
