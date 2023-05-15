@@ -179,6 +179,32 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
    1560aa2..1958d9f  dev -> dev
 
+<!-- Create an ft/bundle-2 branch and create a services page -->
 ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git checkout -b ft/bundle-2
 Switched to a new branch 'ft/bundle-2'
 ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ touch services.html
+
+<!-- Stage the changes and commit them -->
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git add .
+ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git commit -m "Create a service page"
+[ft/bundle-2 815d283] Create a service page
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 services.html
+
+
+<!-- Push the chnages to the github repo -->
+ ivy@ivy-HP-ProBook-430-G7:~/Development/ojemba/git/gym-git-exercise-solution$ git push -u origin ft/bundle-2
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 463 bytes | 463.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Murage-Ivy/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote: 
+To github.com:Murage-Ivy/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+Branch 'ft/bundle-2' set up to track remote branch 'ft/bundle-2' from 'origin'.
